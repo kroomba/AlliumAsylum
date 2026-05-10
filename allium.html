@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>who are you?</title> <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        body { background-color: black; color: white; font-family: 'VT323', monospace; text-align: center; margin-top: 50px;}
+        .hidden-left { position: fixed; left: 0; top: 0; bottom: 0; width: 10vw; cursor: pointer; }
+        .black-link { color: black; text-decoration: none; display: block; margin-top: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="hidden-left" onclick="window.location.href='investigation.html'"></div>
+
+    <img src="Images/Allium.png" id="alliumImg" alt="Allium" style="cursor:pointer;"> <audio id="strum" src="Audio/guitarstrum.mp3"></audio>
+
+    <a class="black-link" id="rememberLink">remember</a>
+
+    <script>
+        document.getElementById('alliumImg').addEventListener('click', function() {
+            document.getElementById('strum').play();
+        });
+
+        document.getElementById('rememberLink').addEventListener('click', function() {
+            const pages = ['remember-yourself.html', 'remember-thiscode.html', 'remember-song.html']; const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        });
+    </script>
+</body>
+</html>

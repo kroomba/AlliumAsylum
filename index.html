@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALLIUM ASYLUM!!</title> <style>
+        /* Wacky Animations */
+        @keyframes hueShift {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        @keyframes spin { 
+            100% { transform: rotate(360deg); } 
+        }
+        @keyframes pulse { 
+            0% { transform: scale(1); } 
+            50% { transform: scale(1.1); } 
+            100% { transform: scale(1); } 
+        }
+        @keyframes rainbowBorder {
+            0% { border-color: red; }
+            33% { border-color: yellow; }
+            66% { border-color: lime; }
+            100% { border-color: red; }
+        }
+        @keyframes blink { 
+            0%, 100% { opacity: 1; } 
+            50% { opacity: 0; } 
+        }
+
+        body {
+            /* Retina-burning repeating radial background */
+            background: repeating-radial-gradient(circle, #000080, #000080 20px, #ff00ff 20px, #ff00ff 40px);
+            animation: hueShift 4s linear infinite;
+            color: #FFFFFF;
+            font-family: "Comic Sans MS", "Papyrus", fantasy;
+            text-align: center;
+            cursor: crosshair; /* Edgy Y2K cursor */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            /* Container gradient */
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            border: 15px ridge #ffff00;
+            animation: rainbowBorder 0.5s infinite; /* Flashing border */
+            padding: 30px;
+            box-shadow: 10px 10px 30px #000;
+        }
+
+        /* Gradient Text Effect */
+        .gradient-text {
+            background: linear-gradient(to right, red, orange, yellow, #00ff00, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 3.5em;
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+
+        /* 3D Drop Shadow Text */
+        h2 {
+            color: yellow;
+            text-shadow: 3px 3px 0px red, -3px -3px 0px blue; /* Classic clashing drop shadow */
+            font-size: 2em;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Unnecessary box treatments for paragraphs */
+        .content-box {
+            background-color: black;
+            color: lime;
+            display: inline-block;
+            padding: 10px;
+            border: 3px dashed #ff0000;
+            margin: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Obnoxious Button */
+        .demo-btn {
+            background: linear-gradient(to bottom, #ff0000, #ffff00);
+            color: #0000ff;
+            font-size: 32px;
+            font-weight: 900;
+            padding: 20px;
+            text-decoration: underline;
+            border: 10px outset #00ff00;
+            display: inline-block;
+            margin-top: 20px;
+            animation: pulse 0.3s infinite; /* Extremely fast pulse */
+            text-transform: uppercase;
+        }
+        .demo-btn:hover {
+            background: #000;
+            color: #fff;
+            border-style: inset;
+        }
+
+        /* Tiny blinking button */
+        .small-btn {
+            font-size: 10px;
+            color: #ffffff;
+            background-color: #ff00ff;
+            padding: 5px;
+            border: 2px solid white;
+            text-decoration: none;
+            display: block;
+            margin: 50px auto 0;
+            width: 120px;
+            animation: blink 0.5s infinite;
+        }
+
+        .spinner {
+            display: inline-block;
+            animation: spin 1s linear infinite;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <marquee direction="down" width="100%" height="80" behavior="alternate" style="background: yellow; border: 5px solid red;">
+        <marquee behavior="alternate">
+            <span style="color: red; font-size: 2em; font-weight: bold; font-family: Impact;">ALLIUM ASYLUM!!</span>
+        </marquee>
+    </marquee>
+
+    <div class="container">
+        <h1 class="gradient-text">!!! Welcome to ALLIUM ASYLUM !!!</h1>
+        
+        <div style="animation: pulse 1s infinite; margin-top: 20px;">
+            <img src="Images/alliumlogo.png" alt="Allium Asylum Banner" style="border: 5px dotted magenta; width: 80%; max-width: 600px;"> </div>
+        
+        <h2><span class="spinner">⭐</span> The byte-sized RPG with a not-so-silent protagonist...! <span class="spinner">⭐</span></h2> <div>
+            <div class="content-box" style="color: #ff00ff; background: yellow;"><strong>About this game:</strong></div><br> <div class="content-box">Allium Asylum is a byte-sized RPG that lovingly satirizes the tropes of modern indie games.</div><br> <div class="content-box" style="border-color: #00ffff;">Featuring a cast of crazy characters, bullet hell battles, and an original soundtrack. Best enjoyed with no context.</div><br> <div class="content-box">Allium Asylum is divided into 4 volumes. The free demo contains the entirety of Volume 1. Volumes 2-4 will be available to play in the full game's release.</div> </div>
+        
+        <a href="https://store.steampowered.com/app/4020480/Allium_Asylum/" class="demo-btn">TRY THE DEMO ON STEAM!</a> <marquee scrollamount="25" style="margin-top:40px; color: yellow; background: black; font-size: 24px; border-top: 3px solid lime; border-bottom: 3px solid lime;">
+            *** STAY TUNED FOR NEW UPDATES *** MADE BY JAZZ_SNACKS AND CHRIS_ROOM4A *** GUESTBOOK COMING SOON *** BEST VIEWED IN NETSCAPE NAVIGATOR ***
+        </marquee>
+
+        <a href="volume2.html" class="small-btn">Playtest Volume 2</a> </div>
+</body>
+</html>

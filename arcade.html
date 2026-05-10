@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Press X to Dash! Press C to Parry!</title> <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        body { background-color: black; color: white; font-family: 'VT323', monospace; text-align: center; margin-top: 50px;}
+        img { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <audio autoplay loop src="Audio/arcade_song.mp3"></audio>
+
+    <p>(The arcade is an endlessly looping tutorial.)</p> <p>(But you have nothing to learn from a video game.)</p> <img src="Images/arcade.png" id="arcadeImage" alt="Arcade">
+
+    <script>
+        const loadTime = Date.now();
+        document.getElementById('arcadeImage').addEventListener('click', function() {
+            const clickTime = Date.now();
+            if (clickTime - loadTime <= 3000) {
+                window.location.href = 'warpzone.html';
+            } else {
+                window.location.href = 'speedrun_failed.html';
+            }
+        });
+    </script>
+</body>
+</html>
