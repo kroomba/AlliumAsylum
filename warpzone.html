@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Warp Zone!</title> <style>
+    <title>Welcome to Warp Zone! Where are you heading?</title> <style>
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
         body { background-color: black; color: white; font-family: 'VT323', monospace; text-align: center; margin-top: 50px;}
+        .hidden-left { position: fixed; left: 0; top: 0; bottom: 0; width: 10vw; cursor: pointer; }
+        
     </style>
 </head>
 <body>
+    <div class="hidden-left" onclick="window.location.href='investigation-real.html'"></div>
     <audio autoplay src="Audio/warpzone.mp3"></audio> <img src="Images/warpzone.png" alt="Warp Zone"> <p>There are 3 targets in the darkness.</p> <p>There are 3 targets in the mess hall.</p> <p>This is the setup for the optimal route.</p> </body>
 </html>
