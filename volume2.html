@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+         /* Wacky Animations */
+        @keyframes hueShift {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        @keyframes spin { 
+            100% { transform: rotate(360deg); } 
+        }
+        @keyframes pulse { 
+            0% { transform: scale(1); } 
+            50% { transform: scale(1.1); } 
+            100% { transform: scale(1); } 
+        }
+        @keyframes rainbowBorder {
+            0% { border-color: red; }
+            33% { border-color: yellow; }
+            66% { border-color: lime; }
+            100% { border-color: red; }
+        }
+        @keyframes blink { 
+            0%, 100% { opacity: 1; } 
+            50% { opacity: 0; } 
+        }
+
         /* Obnoxious Button */
         .demo-btn {
             background: linear-gradient(to bottom, #ff0000, #ffff00);
